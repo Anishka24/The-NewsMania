@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The News Mania</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="logo.png" alt="Logo" class="logo" onclick="reload()">
+        <h1>The News Mania</h1>
+        <div class="controls">
+            <input type="text" id="search-text" placeholder="Search news...">
+            <button id="search-button">🔍</button>
+            <button id="theme-toggle">🌓</button>
+            <button id="lang-toggle">🌐</button>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <div class="section">
+            <h2>International News</h2>
+            <div id="international-subtopics" class="subtopics"></div>
+        </div>
+        <div class="section">
+            <h2>National News</h2>
+            <div id="national-subtopics" class="subtopics"></div>
+        </div>
+        <div class="section">
+            <h2>State News</h2>
+            <div id="localized-subtopics" class="subtopics"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="cards-container" class="cards-container"></section>
+
+        <template id="template-news-card">
+            <div class="card">
+                <img id="news-img" src="" alt="News Image">
+                <div class="card-content">
+                    <h3 id="news-title">Title</h3>
+                    <p id="news-desc">Description</p>
+                    <p id="news-source">Source · Time</p>
+                </div>
+            </div>
+        </template>
+
+        <section class="notes-section">
+            <h2>📝 Your Notes</h2>
+            <textarea id="notes" placeholder="Write your notes here..."></textarea>
+            <div class="note-buttons">
+                <button id="save-note">💾 Save</button>
+                <button id="download-note">⬇️ Download</button>
+                <button id="clear-note">🗑️ Clear</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
