@@ -42,6 +42,7 @@ Optimized across devices
 ✅ No backend required — it’s a pure frontend app using GNews API.
 
 📸  Preview
+<img width="1914" height="921" alt="image" src="https://github.com/user-attachments/assets/300d2a30-61f7-41b9-9d2a-f5d21933a365" />
 
 
 
